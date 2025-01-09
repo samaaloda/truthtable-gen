@@ -4,6 +4,13 @@
 ## **Project Description**  
 Given a boolean expression, Truth Table Generator will generate the truth table with all possible combinations of unique variables! Leveraging both binary tree and stack data structures with complex algorithms! 
 
+## **How to Use**
+1. Clone this repository using the link
+2. Change directory (CD) to this repository
+3. Type in 'make' to compile the project
+4. Type in './main' to run the code
+5. Try out new combinations!
+
 ## **Incremental Delivery (current product...)**  
 
 #### **Sama**  
