@@ -1,8 +1,16 @@
 # Truth Table Generator  
 ### Contributers: Sama Al-Oda, Luna Almoayad, Tasnim Ayderus, Kristian Diana 
+![image](https://github.com/user-attachments/assets/9d0b0564-b315-43f1-9378-0666ecb28b20)
 
 ## **Project Description**  
 Given a boolean expression, Truth Table Generator will generate the truth table with all possible combinations of unique variables! Leveraging both binary tree and stack data structures with complex algorithms! 
+
+## **How to Use**
+1. Clone this repository using the link
+2. Change directory (CD) to this repository
+3. Type in 'make' to compile the project
+4. Type in './main' to run the code
+5. Try out new combinations!
 
 ## **Incremental Delivery (current product...)**  
 
