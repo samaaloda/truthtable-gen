@@ -52,6 +52,7 @@ char* activate(char print[1000]){
         } 
     print[count]=' ';
     count++;
+
 	int space = strlen(formattedExpr)/2;
     
     for(int i=0;i<strlen(formattedExpr);i++){
@@ -72,7 +73,7 @@ char* activate(char print[1000]){
             count++;
         }
         
-        print[count]='|';
+        print[count]=' ';
         count++;
 		for (int i =0 ; i < space ; i++){
             print[count]=' ';
@@ -174,46 +175,46 @@ int main(int argc, char *argv[]) {
 
     //creates button for '(' and sets it into a place 
     GtkWidget *open=gtk_button_new_with_label("(");
-    gtk_fixed_put(GTK_FIXED(fixed), open, 50,50);
+    gtk_fixed_put(GTK_FIXED(fixed), open, 50+100,50);
 
     GtkWidget *closed=gtk_button_new_with_label(")");
-    gtk_fixed_put(GTK_FIXED(fixed), closed, 100,50);
+    gtk_fixed_put(GTK_FIXED(fixed), closed, 100+100,50);
 
     GtkWidget *and=gtk_button_new_with_label("&");
-    gtk_fixed_put(GTK_FIXED(fixed),and,150,50);
+    gtk_fixed_put(GTK_FIXED(fixed),and,150+100,50);
     
     GtkWidget *or=gtk_button_new_with_label("|");
-    gtk_fixed_put(GTK_FIXED(fixed), or, 200,50);
+    gtk_fixed_put(GTK_FIXED(fixed), or, 200+100,50);
 
     GtkWidget *not=gtk_button_new_with_label("~");
-    gtk_fixed_put(GTK_FIXED(fixed), not, 250,50);
+    gtk_fixed_put(GTK_FIXED(fixed), not, 250+100,50);
 
     GtkWidget *p=gtk_button_new_with_label("p");
-    gtk_fixed_put(GTK_FIXED(fixed), p, 50,100);
+    gtk_fixed_put(GTK_FIXED(fixed), p, 50+100,100);
 
     GtkWidget *q=gtk_button_new_with_label("q");
-    gtk_fixed_put(GTK_FIXED(fixed), q, 100,100);
+    gtk_fixed_put(GTK_FIXED(fixed), q, 100+100,100);
 
     GtkWidget *r=gtk_button_new_with_label("r");
-    gtk_fixed_put(GTK_FIXED(fixed), r, 150,100);
+    gtk_fixed_put(GTK_FIXED(fixed), r, 150+100,100);
 
     GtkWidget *s=gtk_button_new_with_label("s");
-    gtk_fixed_put(GTK_FIXED(fixed), s, 200,100);
+    gtk_fixed_put(GTK_FIXED(fixed), s, 200+100,100);
 
     GtkWidget *t=gtk_button_new_with_label("t");
-    gtk_fixed_put(GTK_FIXED(fixed), t, 250,100);
+    gtk_fixed_put(GTK_FIXED(fixed), t, 250+100,100);
 
     GtkWidget *enter=gtk_button_new_with_label("ENTER");
-    gtk_fixed_put(GTK_FIXED(fixed), enter, 300,50);
+    gtk_fixed_put(GTK_FIXED(fixed), enter, 300+100,50);
 
     GtkWidget *delete=gtk_button_new_with_label("DELETE");
-    gtk_fixed_put(GTK_FIXED(fixed), delete, 300,100);
+    gtk_fixed_put(GTK_FIXED(fixed), delete, 300+100,100);
 
     GtkWidget *label = gtk_label_new("Your statement goes here: ");
-    gtk_fixed_put(GTK_FIXED(fixed), label, 50, 200);
+    gtk_fixed_put(GTK_FIXED(fixed), label, 150, 200);
 
     GtkWidget *answer = gtk_label_new("Your truth table goes here: ");
-    gtk_fixed_put(GTK_FIXED(fixed), answer, 50, 250);
+    gtk_fixed_put(GTK_FIXED(fixed), answer, 150, 250);
     
     g_signal_connect(and, "clicked", G_CALLBACK(and_clicked), label);
     g_signal_connect(or, "clicked", G_CALLBACK(or_clicked), label);
